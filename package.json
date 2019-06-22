@@ -1,0 +1,13 @@
+{
+  "name": "borto-pack",
+  "main": "./lib/borto-pack",
+  "version": "0.0.0",
+  "description": "Compile, run and beautify code in C++, Python, Java and Rust",
+  "engines": {
+    "atom": ">=1.19.0 <2.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bortoz/borto-pack.git"
+  }
+}

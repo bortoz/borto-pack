@@ -1,0 +1,54 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Compile",
+        "command": "borto-pack:build"
+      },
+      {
+        "label": "Compile and Run",
+        "command": "borto-pack:build-and-run"
+      },
+      {
+        "label": "Run",
+        "command": "borto-pack:run"
+      },
+      {
+        "label": "Beautify",
+        "command": "borto-pack:beautify"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "Borto's Package",
+          "submenu": [
+            {
+              "label": "Beautify",
+              "command": "borto-pack:beautify"
+            },
+            {
+              "label": "Compile",
+              "command": "borto-pack:build"
+            },
+            {
+              "label": "Compile and Run",
+              "command": "borto-pack:build-and-run"
+            },
+            {
+              "label": "Run",
+              "command": "borto-pack:run"
+            },
+            {
+              "label": "Multi Run",
+              "command": "borto-pack:multi-run"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
