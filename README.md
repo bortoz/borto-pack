@@ -1,13 +1,15 @@
 # Borto's Package
+
 This package provides utilities to compile, run and beautify the code in C++,
 Python, Java and Rust.
 
 # Installation
+
 To compile and run the code you need to install the compiler and add it
 to your PATH.
 
 | Language | Compilers        |
-|:---------|------------------|
+| :------- | ---------------- |
 | C        | `gcc`, `clang`   |
 | C++      | `g++`, `clang++` |
 | Python   | `python`, `pypy` |
@@ -18,21 +20,19 @@ Beauifier is only avaible for C, C++ or Python. To beautify the code you need
 to install the beautifier.
 
 | Language | Beautifiers    |
-|:---------|----------------|
+| :------- | -------------- |
 | C or C++ | `clang-format` |
 | Python   | `yapf`         |
 
 # Usage
+
 This package provides five different commands:
 
-| Command                    | Keybinding          | Use                                                        |
-|:---------------------------|:-------------------:|:-----------------------------------------------------------|
-| `borto-pack:beautify`      | <kbd>F5</kbd>       | Beautify the current file.                                 |
-| `borto-pack:build`         | <kbd>F6</kbd>       | Compile the current file.                                  |
-| `borto-pack:build-and-run` | <kbd>F7</kbd>       | Build current file and run the executable.                 |
-| `borto-pack:run`           | <kbd>F8</kbd>       | Run the executable file corresponding to the current file. |
-| `borto-pack:multi-run`     | <kbd>shift-F8</kbd> | See below.                                                 |
-
-The `borto-pack:multi-run` command will run the executable file on each text
-file on the same directory as the source file which starts with `input` and
-saves the output in a file called with the prefix `output`.
+| Command                          |     Keybinding      | Use                                                                                                                  |
+| :------------------------------- | :-----------------: | :------------------------------------------------------------------------------------------------------------------- |
+| `borto-pack:beautify`            |    <kbd>F5</kbd>    | Beautify the current file.                                                                                           |
+| `borto-pack:build`               |    <kbd>F6</kbd>    | Compile the current file.                                                                                            |
+| `borto-pack:build-and-run`       |    <kbd>F7</kbd>    | Build current file and run the executable.                                                                           |
+| `borto-pack:multi-build-and-run` | <kbd>shift-F7</kbd> | Compile the current file and call `multi-run`.                                                                       |
+| `borto-pack:run`                 |    <kbd>F8</kbd>    | Run the executable file corresponding to the current file.                                                           |
+| `borto-pack:multi-run`           | <kbd>shift-F8</kbd> | Run the executable file on each file in the directory `./input/` and saves the outputs in the directory `./output/`. |
