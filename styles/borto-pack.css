@@ -1,0 +1,34 @@
+.borto-pack-panel {
+  padding: 5px;
+}
+
+.borto-pack-expandable {
+  padding-bottom: 5px;
+}
+
+.borto-pack-expandable-header {
+  cursor: default;
+  user-select: none;
+  font-size: 16px;
+}
+
+.borto-pack-expandable-icon {
+  display: inline-block;
+  text-align: center;
+  font-family: 'Octicons Regular';
+  width: 20px;
+  height: 16px;
+  margin-left: 5px;
+  padding-right: 5px;
+}
+
+.borto-pack-expandable-title {
+}
+
+.borto-pack-testcase-box {
+  margin: 5px;
+}
+
+.borto-pack-testcase-pre {
+  font-size: 12px;
+}
