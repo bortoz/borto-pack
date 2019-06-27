@@ -2,6 +2,10 @@
   "context-menu": {
     "atom-text-editor": [
       {
+        "label": "Beautify",
+        "command": "borto-pack:beautify"
+      },
+      {
         "label": "Compile",
         "command": "borto-pack:build"
       },
@@ -12,10 +16,6 @@
       {
         "label": "Run",
         "command": "borto-pack:run"
-      },
-      {
-        "label": "Beautify",
-        "command": "borto-pack:beautify"
       }
     ]
   },
