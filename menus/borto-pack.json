@@ -10,12 +10,20 @@
         "command": "borto-pack:build"
       },
       {
-        "label": "Compile and Run",
+        "label": "Compile and run",
         "command": "borto-pack:build-and-run"
+      },
+      {
+        "label": "Multi compile and run",
+        "command": "borto-pack:multi-build-and-run"
       },
       {
         "label": "Run",
         "command": "borto-pack:run"
+      },
+      {
+        "label": "Multi run",
+        "command": "borto-pack:multi-run"
       }
     ]
   },
@@ -35,15 +43,19 @@
               "command": "borto-pack:build"
             },
             {
-              "label": "Compile and Run",
+              "label": "Compile and run",
               "command": "borto-pack:build-and-run"
+            },
+            {
+              "label": "Multi compile and run",
+              "command": "borto-pack:multi-build-and-run"
             },
             {
               "label": "Run",
               "command": "borto-pack:run"
             },
             {
-              "label": "Multi Run",
+              "label": "Multi run",
               "command": "borto-pack:multi-run"
             }
           ]
