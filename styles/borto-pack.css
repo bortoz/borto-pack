@@ -3,24 +3,30 @@
   overflow-y: scroll;
 }
 
-.borto-pack-expandable {
-}
-
-.borto-pack-expandable-header {
+.borto-pack-collapsible-header {
   cursor: default;
   user-select: none;
   font-size: 16px;
 }
 
-.borto-pack-expandable-icon {
+.borto-pack-collapsible-header::before {
   display: inline-block;
   text-align: center;
   font-family: 'Octicons Regular';
+  content: '\f078';
   width: 20px;
-  padding-right: 5px;
+  padding-left: 2px;
+  padding-right: 4px;
 }
 
-.borto-pack-expandable-title {
+.borto-pack-collapsible-header.expanded::before {
+  content: '\f0a3';
+}
+
+.borto-pack-collapsible-content {
+  max-height: 0;
+  overflow-y: hidden;
+  transition: max-height 0.2s ease-out;
 }
 
 .borto-pack-testcase-box {
