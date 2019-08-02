@@ -1,0 +1,85 @@
+@import "ui-variables";
+
+.borto-pack-panel {
+  padding-left: 5px;
+  overflow-y: scroll;
+}
+
+.borto-pack-testcase-header {
+  display: flex;
+  height: 25px;
+  justify-content: space-between;
+}
+
+.btn.btn-default.borto-pack-testcase-button {
+  height: 23px;
+  width: 60px;
+  margin: 1px;
+  line-height: 18px;
+}
+
+.btn.btn-default.borto-pack-testcase-button:focus {
+  border-color: @button-border-color;
+  box-shadow: none;
+}
+
+.borto-pack-testcase-title {
+  cursor: default;
+  user-select: none;
+  font-size: 16px;
+  overflow: hidden;
+}
+
+.borto-pack-testcase-title::before {
+  display: inline-block;
+  text-align: center;
+  font-family: 'Octicons Regular';
+  content: '';
+  width: 20px;
+  padding-left: 2px;
+  padding-right: 4px;
+}
+
+.borto-pack-testcase-title.resolved::before {
+  content: '\f078';
+}
+
+.borto-pack-testcase-title.resolved.expanded::before {
+  content: '\f0a3';
+}
+
+.borto-pack-testcase-content {
+  max-height: 0;
+  overflow-y: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.borto-pack-testcase-box {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.borto-pack-testcase-pre {
+  font-size: 12px;
+}
+
+.borto-pack-testcase-message {
+  margin: 1px;
+  border-radius: 3px;
+  border: 1px solid @button-border-color;
+  width: 60px;
+  text-align: center;
+  line-height: 22px;
+  cursor: default;
+  user-select: none;
+}
+
+.borto-pack-testcase-message.success {
+  color: #f4f4f4;
+  background-color: @background-color-success;
+}
+
+.borto-pack-testcase-message.error {
+  color: #d7dae0;
+  background-color: @background-color-error;
+}

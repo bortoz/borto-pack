@@ -1,4 +1,5 @@
 ## 0.3.0
+- Improve GUI and remove notifications
 - Remove `multi-build-and-run` command
 - Fix SIGINT handling
 
