@@ -1,3 +1,7 @@
+## 0.3.0
+- Remove `multi-build-and-run` command
+- Fix SIGINT handling
+
 ## 0.2.2
 - Fix overflow on testcase panel
 - Reduce memory usage during `multi-run` command

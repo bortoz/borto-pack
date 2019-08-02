@@ -3,7 +3,6 @@
     "f5": "borto-pack:beautify",
     "f6": "borto-pack:build",
     "f7": "borto-pack:build-and-run",
-    "shift-f7": "borto-pack:multi-build-and-run",
     "f8": "borto-pack:run",
     "shift-f8": "borto-pack:multi-run"
   }

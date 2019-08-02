@@ -14,10 +14,6 @@
         "command": "borto-pack:build-and-run"
       },
       {
-        "label": "Multi compile and run",
-        "command": "borto-pack:multi-build-and-run"
-      },
-      {
         "label": "Run",
         "command": "borto-pack:run"
       },
@@ -45,10 +41,6 @@
             {
               "label": "Compile and run",
               "command": "borto-pack:build-and-run"
-            },
-            {
-              "label": "Multi compile and run",
-              "command": "borto-pack:multi-build-and-run"
             },
             {
               "label": "Run",
