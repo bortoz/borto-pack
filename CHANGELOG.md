@@ -1,5 +1,10 @@
+## 0.4.0
+- Add standard error on testcase panel
+- Show signal when process fails
+- Remove past notifications when run a new command
+
 ## 0.3.0
-- Improve GUI and remove notifications
+- Improve GUI
 - Remove `multi-build-and-run` command
 - Fix SIGINT handling
 
