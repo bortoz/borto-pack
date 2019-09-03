@@ -10,7 +10,7 @@ except KeyboardInterrupt:
 
 if code >= 0:
     print('\nProcess returned {0} (0x{0:X})\texecution time : {1:.3f} s'.format(code, time.time() - clock))
-if -31 <= code < 0:
+else:
     signal = [
         "", "SIGHUP", "SIGINT", "SIGQUIT", "SIGILL", "SIGTRAP", "SIGABRT",
         "SIGBUS", "SIGFPE", "SIGKILL", "SIGUSR1", "SIGSEGV", "SIGUSR2",
@@ -24,5 +24,4 @@ if -31 <= code < 0:
 if platform.system() == 'Windows':
     os.system('PAUSE')
 else:
-    subprocess.run(
-        ['bash', '-c', 'read -n 1 -s -r -p "Press any key to continue..."'])
+    subprocess.run(['bash', '-c', 'read -n 1 -s -r -p "Press any key to continue..."'])
