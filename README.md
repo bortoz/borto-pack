@@ -13,13 +13,13 @@ To compile and run the code you need to install the compiler and add it to your 
 | Python   | `python`, `pypy` |
 | Java     | `javac`          |
 
-Beauifier is only avaible for C, C++ or Python. To beautify the code you need
-to install the beautifier.
+To beautify the code you need to install the beautifier.
 
 | Language | Beautifiers    |
 | :------- | -------------- |
 | C or C++ | `clang-format` |
 | Python   | `yapf`         |
+| Java     | embedded       |
 
 # Usage
 
