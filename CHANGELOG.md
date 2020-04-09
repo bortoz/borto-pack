@@ -1,3 +1,9 @@
+## 0.5.0
+- Add timeout config to `multi-run` command
+- Add Java beautifier
+- Add terminal support
+- Fix bug in `multi-run` command when process didn't finish
+
 ## 0.4.0
 - Add standard error on testcase panel
 - Show signal when process fails
