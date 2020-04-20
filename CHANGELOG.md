@@ -1,3 +1,8 @@
+## 0.6.0
+- Add panel to show compiler errors
+- Remove Java support
+- Fix linux compatibility
+
 ## 0.5.0
 - Add timeout config to `multi-run` command
 - Add Java beautifier
