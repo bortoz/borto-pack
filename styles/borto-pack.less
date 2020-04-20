@@ -92,7 +92,7 @@
   flex-direction: column;
 }
 
-.borto-log-container {
+.borto-log-table-container {
   overflow-y: scroll;
   margin-bottom: auto;
 }
@@ -143,7 +143,7 @@
   text-align: center;
   font-family: 'Octicons Regular';
   content: '';
-    width: 20px;
+  width: 20px;
 }
 
 .borto-log-cell.column1.note::before {
@@ -212,4 +212,18 @@
 
 .btn.btn-default.borto-log-button.selected.error {
   background: @background-color-error;
+}
+
+.borto-log-pre-container {
+  overflow: scroll;
+  height: 100%;
+  width: 100%;
+}
+
+.borto-log-pre {
+  overflow: visible;
+  height: fit-content;
+  width: fit-content;
+  min-height: 100%;
+  min-width: 100%;
 }
