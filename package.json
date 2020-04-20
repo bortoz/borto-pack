@@ -13,6 +13,7 @@
   "dependencies": {
     "etch": "^0.14.0",
     "pump": "^3.0.0",
+    "string.prototype.matchall": "^4.0.2",
     "through2": "^3.0.1"
   }
 }

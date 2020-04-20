@@ -1,6 +1,6 @@
 # Borto's Package
 
-This package provides utilities to compile, run and beautify the code in C++, Python and Java.
+This package provides utilities to compile, run and beautify the code in C++, Python.
 
 # Installation
 
@@ -11,7 +11,6 @@ To compile and run the code you need to install the compiler and add it to your 
 | C        | `gcc`, `clang`   |
 | C++      | `g++`, `clang++` |
 | Python   | `python`, `pypy` |
-| Java     | `javac`          |
 
 To beautify the code you need to install the beautifier.
 
@@ -19,7 +18,6 @@ To beautify the code you need to install the beautifier.
 | :------- | -------------- |
 | C or C++ | `clang-format` |
 | Python   | `yapf`         |
-| Java     | embedded       |
 
 # Usage
 

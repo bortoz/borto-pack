@@ -1,36 +1,38 @@
 @import "ui-variables";
 
-.borto-pack-panel {
+.borto-testcase-panel {
   padding-left: 5px;
   overflow-y: scroll;
 }
 
-.borto-pack-testcase-header {
+.borto-testcase-header {
   display: flex;
   height: 25px;
   justify-content: space-between;
 }
 
-.btn.btn-default.borto-pack-testcase-button {
+.btn.btn-default.borto-testcase-button {
   height: 23px;
   width: 60px;
   margin: 1px;
   line-height: 18px;
 }
 
-.btn.btn-default.borto-pack-testcase-button:focus {
+.btn.btn-default.borto-testcase-button:focus, .btn.btn-default.borto-log-button:focus {
   border-color: @button-border-color;
   box-shadow: none;
 }
 
-.borto-pack-testcase-title {
+.borto-testcase-title {
   cursor: default;
   user-select: none;
-  font-size: 16px;
+  font-size: 14px;
   overflow: hidden;
+  display: flex;
+  align-items: center;
 }
 
-.borto-pack-testcase-title::before {
+.borto-testcase-title::before {
   display: inline-block;
   text-align: center;
   font-family: 'Octicons Regular';
@@ -40,30 +42,30 @@
   padding-right: 4px;
 }
 
-.borto-pack-testcase-title.resolved::before {
+.borto-testcase-title.resolved::before {
   content: '\f078';
 }
 
-.borto-pack-testcase-title.resolved.expanded::before {
+.borto-testcase-title.resolved.expanded::before {
   content: '\f0a3';
 }
 
-.borto-pack-testcase-content {
+.borto-testcase-content {
   max-height: 0;
   overflow-y: hidden;
   transition: max-height 0.2s ease-out;
 }
 
-.borto-pack-testcase-box {
+.borto-testcase-box {
   margin-top: 5px;
   margin-bottom: 5px;
 }
 
-.borto-pack-testcase-pre {
+.borto-testcase-pre {
   font-size: 12px;
 }
 
-.borto-pack-testcase-message {
+.borto-testcase-message {
   margin: 1px;
   border-radius: 3px;
   border: 1px solid @button-border-color;
@@ -74,12 +76,140 @@
   user-select: none;
 }
 
-.borto-pack-testcase-message.success {
+.borto-testcase-message.success {
   color: #f4f4f4;
   background-color: @background-color-success;
 }
 
-.borto-pack-testcase-message.error {
+.borto-testcase-message.error {
   color: #d7dae0;
   background-color: @background-color-error;
+}
+
+.borto-log-panel {
+  margin-left: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.borto-log-container {
+  overflow-y: scroll;
+  margin-bottom: auto;
+}
+
+.borto-log-table {
+  border-collapse: separate;
+  border-spacing: 0px 3px;
+}
+
+.borto-log-head {
+  padding-left: 5px;
+  padding-right: 2px;
+  font-size: 16px;
+}
+
+.borto-log-cell {
+  font-family: "Menlo", "Monaco", "Consolas", "Courier New", monospace;
+  font-size: 14px;
+  vertical-align: top;
+}
+
+.borto-log-cell.column1 {
+  padding-right: 2px;
+}
+
+.borto-log-cell.column2 {
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.borto-log-cell.column3 {
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  width: 100%;
+  min-width: 400px;
+}
+
+.borto-log-cell.column2, .borto-log-cell.column3 {
+  padding-top: 2px;
+  padding-left: 5px;
+  padding-right: 2px;
+  padding-bottom: 1px;
+  background: @background-color-highlight;
+}
+
+.borto-log-cell.column1::before {
+  display: inline-block;
+  text-align: center;
+  font-family: 'Octicons Regular';
+  content: '';
+    width: 20px;
+}
+
+.borto-log-cell.column1.note::before {
+  content: '\f059';
+  color: @background-color-info;
+}
+
+.borto-log-cell.column1.warning::before {
+  content: '\f02d';
+  color: @background-color-warning;
+}
+
+.borto-log-cell.column1.error::before {
+  content: '\f0d2';
+  color: @background-color-error;
+}
+
+.borto-log-cell.column1.error.fatal::before {
+  content: '\f091';
+  color: @background-color-error;
+}
+
+.borto-log-content.column2 {
+  height: 20px;
+  width: 220px;
+}
+
+.borto-log-fit-content {
+  height: fit-content;
+  width: fit-content;
+}
+
+.borto-log-fit-content.column2 {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  max-width: 220px;
+}
+
+.borto-log-selector {
+  height: 26px;
+  min-width: 290px;
+  margin-left: auto;
+  margin-right: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.btn.btn-default.borto-log-button {
+  width: 70px;
+  margin-left: 5px;
+}
+
+.btn.btn-default.borto-log-button.selected {
+  color: #d7dae0;
+}
+
+.btn.btn-default.borto-log-button.selected.info {
+  background: @background-color-info;
+}
+
+.btn.btn-default.borto-log-button.selected.warning {
+  background: @background-color-warning;
+}
+
+.btn.btn-default.borto-log-button.selected.error {
+  background: @background-color-error;
 }
