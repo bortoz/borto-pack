@@ -1,6 +1,6 @@
 # Borto's Package
 
-This package provides utilities to compile, run and beautify the code in C++, Python.
+This package provides utilities to compile, run and beautify the code in C, C++ and Python.
 
 # Installation
 
