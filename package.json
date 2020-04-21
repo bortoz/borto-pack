@@ -2,7 +2,7 @@
   "name": "borto-pack",
   "main": "./lib/main",
   "version": "0.6.0",
-  "description": "Compile, run and beautify code in C++, Python, Java and Rust",
+  "description": "Compile, run and beautify code in C, C++ and Python",
   "engines": {
     "atom": ">=1.19.0 <2.0.0"
   },
