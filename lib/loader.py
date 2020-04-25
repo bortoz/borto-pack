@@ -1,4 +1,4 @@
-import os, platform, subprocess, sys, time
+import os, platform, subprocess, signal, sys, time
 
 clock = time.time()
 
@@ -7,19 +7,17 @@ try:
     code = child.returncode
 except KeyboardInterrupt:
     code = -2
+except Exception as e:
+    print(e)
+    code = 1
 
 if code >= 0:
     print('\nProcess returned {0} (0x{0:X})\texecution time : {1:.3f} s'.format(code, time.time() - clock))
 else:
-    signal = [
-        "", "SIGHUP", "SIGINT", "SIGQUIT", "SIGILL", "SIGTRAP", "SIGABRT",
-        "SIGBUS", "SIGFPE", "SIGKILL", "SIGUSR1", "SIGSEGV", "SIGUSR2",
-        "SIGPIPE", "SIGALRM", "SIGTERM", "SIGSTKFLT", "SIGCHLD", "SIGCONT",
-        "SIGSTOP", "SIGTSTP", "SIGTTIN", "SIGTTOU", "SIGURG", "SIGXCPU",
-        "SIGXFSZ", "SIGVTALRM", "SIGPROF", "SIGWINCH", "SIGIO", "SIGPWR",
-        "SIGSYS"
-    ][-code]
-    print('\nProcess terminated by signal {} ({})'.format(-code, signal))
+    try:
+        print('\nProcess terminated by signal {} ({})'.format(-code, signal.Signals(-code).name))
+    except:
+        print('\nProcess terminated by signal {}'.format(-code))
 
 if platform.system() == 'Windows':
     os.system('PAUSE')
