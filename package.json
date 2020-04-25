@@ -11,6 +11,7 @@
     "url": "https://github.com/bortoz/borto-pack.git"
   },
   "dependencies": {
+    "better-queue": "^3.8.10",
     "etch": "^0.14.0",
     "pump": "^3.0.0",
     "through2": "^3.0.1"

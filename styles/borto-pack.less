@@ -24,7 +24,6 @@
 }
 
 .borto-testcase-title {
-  cursor: default;
   user-select: none;
   font-size: 14px;
   overflow: hidden;
@@ -40,6 +39,10 @@
   width: 20px;
   padding-left: 2px;
   padding-right: 4px;
+}
+
+.borto-testcase-title.resolved {
+  cursor: pointer;
 }
 
 .borto-testcase-title.resolved::before {
@@ -74,6 +77,10 @@
   line-height: 22px;
   cursor: default;
   user-select: none;
+}
+
+.borto-testcase-message.pending {
+  background-color: @button-background-color;
 }
 
 .borto-testcase-message.success {
