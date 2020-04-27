@@ -1,3 +1,9 @@
+## 0.7.0
+- Add partial terminal profiles support
+- Add beautify options
+- Improve multiRun evaluation system
+- Add support to file with whitespace
+
 ## 0.6.0
 - Add panel to show compiler errors
 - Remove Java support
