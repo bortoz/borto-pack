@@ -1,7 +1,7 @@
 {
   "name": "borto-pack",
   "main": "./lib/main",
-  "version": "0.6.1",
+  "version": "0.7.0",
   "description": "Compile, run and beautify code in C, C++ and Python",
   "engines": {
     "atom": ">=1.19.0 <2.0.0"
