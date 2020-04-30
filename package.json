@@ -4,7 +4,7 @@
   "version": "0.7.1",
   "description": "Compile, run and beautify code in C, C++ and Python",
   "engines": {
-    "atom": ">=1.19.0 <2.0.0"
+    "atom": ">=1.39.0 <2.0.0"
   },
   "repository": {
     "type": "git",
