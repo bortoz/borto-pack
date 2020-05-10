@@ -1,3 +1,8 @@
+## 0.8.0
+- Add linter when compiling
+- Fix support of clang on windows
+- Fix bug in `build-and-run` command when switching between text editors
+
 ## 0.7.0
 - Add partial terminal profiles support
 - Add beautify options

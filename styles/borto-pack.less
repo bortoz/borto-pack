@@ -235,3 +235,32 @@
   min-height: 100%;
   min-width: 100%;
 }
+
+.borto-gutter::before {
+  font-family: 'Octicons Regular';
+  content: '\f052';
+}
+
+.borto-gutter.warning::before {
+  color: @background-color-warning;
+}
+
+.borto-gutter.error::before,
+.borto-gutter.fatal-error::before {
+  color: @background-color-error;
+}
+
+.borto-text-decoration {
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+  text-decoration-skip-ink: none;
+}
+
+.borto-text-decoration.warning {
+  text-decoration-color: @background-color-warning;
+}
+
+.borto-text-decoration.error,
+.borto-text-decoration.fatal-error {
+  text-decoration-color: @background-color-error;
+}
