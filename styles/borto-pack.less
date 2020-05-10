@@ -251,16 +251,28 @@
 }
 
 .borto-text-decoration {
-  text-decoration-line: underline;
-  text-decoration-style: wavy;
-  text-decoration-skip-ink: none;
+	position: relative;
 }
 
-.borto-text-decoration.warning {
-  text-decoration-color: @background-color-warning;
+.borto-text-decoration::before {
+	content: '';
+	position: absolute;
+	left: 0px;
+	right: 0px;
+  bottom: -6px;
+  height: 100%;
+  background-position: bottom left;
+  background-repeat: repeat-x;
+  background-size: 10px 5px;
 }
 
-.borto-text-decoration.error,
-.borto-text-decoration.fatal-error {
-  text-decoration-color: @background-color-error;
+.borto-text-decoration.warning::before {
+  background-image: linear-gradient(135deg, transparent 20%, @background-color-warning 27%, @background-color-warning 40%, transparent 47%),
+					          linear-gradient( 45deg, transparent 53%, @background-color-warning 60%, @background-color-warning 73%, transparent 80%);
+}
+
+.borto-text-decoration.error::before,
+.borto-text-decoration.fatal-error::before {
+  background-image: linear-gradient(135deg, transparent 20%, @background-color-error 27%, @background-color-error 40%, transparent 47%),
+					          linear-gradient( 45deg, transparent 53%, @background-color-error 60%, @background-color-error 73%, transparent 80%);
 }
