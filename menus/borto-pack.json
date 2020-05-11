@@ -1,25 +1,13 @@
 {
   "context-menu": {
-    "atom-text-editor": [
+    ".borto-log-message": [
       {
-        "label": "Beautify",
-        "command": "borto-pack:beautify"
+        "label": "Copy",
+        "command": "borto-pack:copy"
       },
       {
-        "label": "Compile",
-        "command": "borto-pack:build"
-      },
-      {
-        "label": "Compile and Run",
-        "command": "borto-pack:build-and-run"
-      },
-      {
-        "label": "Run",
-        "command": "borto-pack:run"
-      },
-      {
-        "label": "Multi Run",
-        "command": "borto-pack:multi-run"
+        "label": "Search on google",
+        "command": "borto-pack:search"
       }
     ]
   },

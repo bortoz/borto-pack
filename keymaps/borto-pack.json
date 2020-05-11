@@ -1,8 +1,10 @@
 {
-  "atom-text-editor": {
-    "f5": "borto-pack:beautify",
+  "atom-text-editor[data-grammar='source c'], atom-text-editor[data-grammar='source cpp']": {
     "f6": "borto-pack:build",
-    "f7": "borto-pack:build-and-run",
+    "f7": "borto-pack:build-and-run"
+  },
+  "atom-text-editor[data-grammar='source c'], atom-text-editor[data-grammar='source cpp'], atom-text-editor[data-grammar='source python']": {
+    "f5": "borto-pack:beautify",
     "f8": "borto-pack:run",
     "shift-f8": "borto-pack:multi-run"
   }
