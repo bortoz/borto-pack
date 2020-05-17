@@ -13,9 +13,15 @@
   "dependencies": {
     "better-queue": "^3.8.10",
     "etch": "^0.14.0",
-    "open": "^7.0.3",
     "pump": "^3.0.0",
     "through2": "^3.0.1"
+  },
+  "consumedServices": {
+    "busy-signal": {
+      "versions": {
+        "1.0.0": "consumeSignal"
+      }
+    }
   },
   "license": "MIT"
 }

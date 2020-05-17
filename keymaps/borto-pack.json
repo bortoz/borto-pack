@@ -7,5 +7,8 @@
     "f5": "borto-pack:beautify",
     "f8": "borto-pack:run",
     "shift-f8": "borto-pack:multi-run"
+  },
+  ".borto-log-panel": {
+    "ctrl-c": "borto-pack:copy"
   }
 }

@@ -1,3 +1,9 @@
+## 1.0.0
+- First major release!
+- Improve stability!
+- All bugs fixed!
+- Add new bugs to fix later!
+
 ## 0.8.0
 - Add linter when compiling
 - Fix support of clang on windows

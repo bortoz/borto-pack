@@ -9,6 +9,22 @@
         "label": "Search on google",
         "command": "borto-pack:search"
       }
+    ],
+    ".borto-log-file[data-path]": [
+      {
+        "label": "Open file",
+        "command": "borto-pack:open-file"
+      },
+      {
+        "label": "Show in Explorer",
+        "command": "borto-pack:open-explorer"
+      }
+    ],
+    ".borto-testcase.resolved": [
+      {
+        "label": "Open testcase",
+        "command": "borto-pack:open-testcase"
+      }
     ]
   },
   "menu": [

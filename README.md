@@ -2,7 +2,29 @@
 
 This package provides utilities to compile, run and beautify the code in C, C++ and Python.
 
-# Installation
+## Feature
+
+### Compiler error parser and linter
+
+You can press <kbd>F6</kbd> to compile your code, if there are errors a panel with details will open.
+
+<img src="img/compiler-panel.jpg" width="640">
+
+There is also a linter feature to find errors quickly.
+
+### Support of different terminals
+
+You can press <kbd>F8</kbd> to run your code, you can choose and customize the terminal to use.
+
+<img src="img/terminals.jpg" width="640">
+
+### Running multiple inputs in parallel
+
+By pressing <kbd>shift-F8</kbd>, your code will be executed on each file in the `input` folder.
+
+<img src="img/testcase-panel.jpg" width="640">
+
+## Installation
 
 To compile and run the code you need to install the compiler and add it to your PATH.
 
@@ -19,7 +41,7 @@ To beautify the code you need to install the beautifier.
 | C or C++ | `clang-format` |
 | Python   | `yapf`         |
 
-# Usage
+## Usage
 
 This package provides five different commands:
 
