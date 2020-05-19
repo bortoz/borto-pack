@@ -8,7 +8,7 @@ This package provides utilities to compile, run and beautify the code in C, C++ 
 
 You can press <kbd>F6</kbd> to compile your code, if there are errors a panel with details will open.
 
-<img src="img/compiler-panel.jpg" width="640">
+![Compiler panel](https://github.com/bortoz/borto-pack/raw/master/img/compiler-panel.jpg)
 
 There is also a linter feature to find errors quickly.
 
@@ -16,13 +16,13 @@ There is also a linter feature to find errors quickly.
 
 You can press <kbd>F8</kbd> to run your code, you can choose and customize the terminal to use.
 
-<img src="img/terminals.jpg" width="640">
+![Teminals](https://github.com/bortoz/borto-pack/raw/master/img/terminals.jpg)
 
 ### Running multiple inputs in parallel
 
 By pressing <kbd>shift-F8</kbd>, your code will be executed on each file in the `input` folder.
 
-<img src="img/testcase-panel.jpg" width="640">
+![Testcase panel](https://github.com/bortoz/borto-pack/raw/master/img/testcase-panel.jpg)
 
 ## Installation
 
