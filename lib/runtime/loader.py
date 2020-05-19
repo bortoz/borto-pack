@@ -19,7 +19,10 @@ else:
     except:
         print('\nProcess terminated by signal {}'.format(-code))
 
-if platform.system() == 'Windows':
-    os.system('PAUSE')
-else:
-    subprocess.run(['bash', '-c', 'read -n 1 -s -r -p "Press any key to continue..."'])
+try:
+    if platform.system() == 'Windows':
+        os.system('PAUSE')
+    else:
+        subprocess.run(['bash', '-c', 'read -n 1 -s -r -p "Press any key to continue..."'])
+except:
+    pass
