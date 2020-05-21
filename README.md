@@ -26,7 +26,7 @@ By pressing <kbd>shift-F8</kbd>, your code will be executed on each file in the 
 
 ## Installation
 
-To compile and run the code you need to install the compiler and add it to your PATH.
+To compile and run the code you need to install the compiler and add it to your `PATH`.
 
 | Language | Compilers        |
 | :------- | ---------------- |
@@ -34,12 +34,7 @@ To compile and run the code you need to install the compiler and add it to your 
 | C++      | `g++`, `clang++` |
 | Python   | `python`, `pypy` |
 
-To beautify the code you need to install the beautifier.
-
-| Language | Beautifiers    |
-| :------- | -------------- |
-| C or C++ | `clang-format` |
-| Python   | `yapf`         |
+To beautify `python` code you need to install `yapf` beautifier.
 
 ## Usage
 
