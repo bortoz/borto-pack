@@ -1,6 +1,6 @@
 {
   "context-menu": {
-    ".borto-log-message": [
+    ".borto-log-message, .borto-testcase-box": [
       {
         "label": "Copy",
         "command": "borto-pack:copy"
