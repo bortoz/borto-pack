@@ -1,7 +1,7 @@
 {
   "atom-text-editor[data-grammar='source c'], atom-text-editor[data-grammar='source cpp']": {
     "f6": "borto-pack:build",
-    "f7": "borto-pack:build-and-run"
+    "f7": "borto-pack:build-and-run",
     "shift-f7": "borto-pack:debug"
   },
   "atom-text-editor[data-grammar='source c'], atom-text-editor[data-grammar='source cpp'], atom-text-editor[data-grammar='source python']": {
