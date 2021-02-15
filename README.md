@@ -47,3 +47,9 @@ This package provides five different commands:
 | `borto-pack:build-and-run`       |    <kbd>F7</kbd>    | Build current file and run the executable.                                                                           |
 | `borto-pack:run`                 |    <kbd>F8</kbd>    | Run the executable file corresponding to the current file.                                                           |
 | `borto-pack:multi-run`           | <kbd>shift-F8</kbd> | Run the executable file on each file in the directory `input` and saves the outputs in the directory `output`. |
+
+
+
+## TO DO
+
+add gdb support
